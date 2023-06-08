@@ -6,3 +6,8 @@ def main():
 
 if __name__ == '__main__':
     main()
+import streamlit as st
+valor = st.slider('Choose a value:', 0, 10, 6)
+st.write('este es tu valor', valor, 'y este es tu valor +10', valor+10)
+if valor > 5:
+    st.write('este valor es mayor que 5')
